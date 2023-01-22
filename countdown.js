@@ -1,5 +1,5 @@
 const secondsInaMinute = 60;
-const minutes_25 = secondsInaMinute * 0.2;
+const minutes_25 = secondsInaMinute * 15;
 const minutes_50 = secondsInaMinute * 60;
 const seconds_10 = 10; //for testing
 
