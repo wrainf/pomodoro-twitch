@@ -1,0 +1,114 @@
+@font-face {
+  font-family: SFPro;
+  src: url(./SFPRODISPLAYREGULAR.OTF);
+}
+
+body{
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  font-family: 'SFPro';
+}
+
+#day {
+  font-size: 60px;
+
+}
+
+#time {
+  font-size: 40px;
+}
+
+#overlay{
+  display: flex;
+  height: 100vh;
+}
+
+
+#day-time {
+  flex: 1;
+  padding: 60px;
+  display: flex;
+  color: white;
+  flex-direction: column;
+  justify-content: end;
+  background-color: #00000000;
+}
+
+div:hover {
+  cursor: pointer;
+}
+
+#goal {
+  margin-bottom: 60px;
+}
+
+.container {
+  background-color: #b9585800;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 180px;
+
+}
+
+#widgets {
+  width: 16vw;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-color: rgba(20, 20, 20, 0.3);
+  backdrop-filter: blur(30px);
+  padding: 20px;
+
+}
+
+#widgets > *{
+  color: rgba(255,255,255,0.7);
+  letter-spacing: 1px;
+}
+
+#watch, #pomo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#counts {
+  display: flex;
+  color: white;
+  font-weight: 600;
+}
+
+#countdown {
+  text-align: center;
+  font-size: 40px;
+  font-family: "SFPro";
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+}
+
+button {
+  background-color: #00000000;
+  border: 0;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.imageContainer {
+  height: 20px;
+  width: 20px;
+}
+
+.imageContainer img {
+  width:auto;
+  height:100%;
+}
+
+#resetButton {
+  margin-right: 15px;
+}

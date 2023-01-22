@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./countdown.js" defer></script>
+  <script src="./script.js" defer></script>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div id="overlay">
+    <div id="day-time">
+      <div id="day">Sunday</div>
+      <div id="time">13:45</div>
+    </div>
+    <div id="widgets">
+
+      <div class="buttons">
+        <button type="button" onclick="playPauseCountdown()">
+          <div class="imageContainer">
+            <img id="playPause" src="playButton4x.png">
+          </div>
+        </button>
+        <button type="button" onclick="restartCountdown()">
+          <div class="imageContainer" id="resetButton">
+            <img src="resetButton4x.png">
+          </div>
+        </button>
+      </div>
+      
+      <div id="watch">
+        <div id="text">Study</div>
+        <div id="countdown" onclick="updateDuration()">59:59</div>
+      </div>
+
+      <div id="pomo">
+        <div>Pomo</div>
+        <div id="counts">
+          <div id="curr-count" onclick="incrementCurr()">1</div>
+          <div>/</div>
+          <div id="total-count" onclick="increment()">1</div>
+
+        </div>
+      </div>
+      <div id="goal">Goal</div>
+      <div>Chat</div>
+          
+      
+  
+        <audio id="yoScottAudio">
+          <source src="notification.mp3" type="audio/mpeg">
+        </audio>
+      
+    </div>
+
+  </div>
+  
+</body>
+</html>
