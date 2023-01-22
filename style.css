@@ -61,8 +61,7 @@ div:hover {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  background-color: rgba(20, 20, 20, 0.3);
-  backdrop-filter: blur(30px);
+  background-color: rgba(20, 20, 20, 0.8);
   padding: 20px;
 
 }
