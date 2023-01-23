@@ -8,7 +8,12 @@ const days = ['Sunday','Monday','Tuesday','Wednesday','Thursday', 'Friday', 'Sat
 function currentTime() {
   const d = new Date();
   day.textContent = days[d.getDay()];
-  time.textContent = `${d.getHours()}:${d.getMinutes()}`
+  if(d.getMinutes() < 10) {
+    time.textContent = `${d.getHours()}:0${d.getMinutes()}`
+  } else {
+    time.textContent = `${d.getHours()}:${d.getMinutes()}`
+  }
+  
   let t = setTimeout(function(){ currentTime() }, 60000); 
 }
 
